@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
                         for (int i=0;i<10;i++){
                            myAdapter.addData(i,"new City:"+i);
                             Log.i("LYM_TAG", "com.lym.rvdemo.MainActivity:"+"run()");
+                            Log.e("LYM_TAG", "com.lym.rvdemo.MainActivity:"+"run()");
 
                         }
                         myAdapter.notifyItemRangeChanged(0,10);
