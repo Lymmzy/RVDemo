@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -58,7 +59,8 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void run() {
                         for (int i=0;i<10;i++){
-                            myAdapter.addData(i,"new City:"+i);
+                           myAdapter.addData(i,"new City:"+i);
+                            Log.i("LYM_TAG", "com.lym.rvdemo.MainActivity:"+"run()");
 
                         }
                         myAdapter.notifyItemRangeChanged(0,10);
